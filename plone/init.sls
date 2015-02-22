@@ -41,7 +41,7 @@ buildout_basefiles:
 
 bootstrap_plone:
   cmd.wait:
-    - name: {{ plone.venv_location }}/bin/python bootstrap.py
+    - name: {{ plone.venv_location }}/bin/python bootstrap.py -v2.2.1
     - cwd: {{ plone.instance_location }}
     - user: {{ plone.user }}
     - require:
